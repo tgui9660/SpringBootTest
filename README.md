@@ -1,5 +1,17 @@
 # SpringBootTest
-Testing Spring Boot Features & Deployment to EBS
+Testing Spring Boot Deployment to EBS
+
+Ensure that the default route has content
+HelloWorldController.java
+@Controller
+public class HelloWorldController {
+    @RequestMapping(value = "/", method=RequestMethod.GET)
+    @ResponseBody
+    public String helloWorld(){
+        return "Hello World !!";
+    }
+    
+}
 
 
 application.properties
